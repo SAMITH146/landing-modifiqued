@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 100%;
+    background-color: #003b6f;
+    padding: 20px;
+}
+
+.home-icon img,
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 80px;
+    padding: 40px 70px;
+    background-color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.navbar a {
+    float: left;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+.navbar a:hover {
+    color: #0070c0;
+}
+
+.contact-info {
+    float: right;
+}
+
+.contact-info img {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.contact-info a {
+    color: #0070c0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero-section {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+/* Left Column */
+.left-column {
+    float: left;
+    width: 50%;
+    height: 500px;
+    background-image: url('imgs/deentista.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 30px;
+}
+
+.intro-text {
+    background-color: rgba(0, 59, 111, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+}
+
+.intro-text h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.intro-text h2 {
+    font-size: 2rem;
+    color: #3ab0ff;
+    margin-bottom: 20px;
+}
+
+.intro-text p {
+    font-size: 1rem;
+    margin-bottom: 25px;
+    color: #f0f0f0;
+}
+
+.cta-buttons button {
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    margin-right: 20px;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+}
+
+.book-now {
+    background-color: #3ab0ff;
+    color: white;
+    font-weight: bold;
+}
+
+.read-more {
+    border: 2px solid #3ab0ff;
+    background-color: transparent;
+    color: #3ab0ff;
+    font-weight: bold;
+}
+
+.cta-buttons button img {
+    width: 20px;
+    margin-left: 10px;
+}
+
+/* Right Column */
+.right-column {
+    float: left;
+    width: 50%;
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+.right-column h2 {
+    font-size: 1.8rem;
+    color: #3ab0ff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 15px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f4f4f4;
+}
+
+.form-group input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(58, 176, 255, 0.5);
+}
+
+.right-column button {
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 1rem;
+    background-color: #3ab0ff;
+    color: white;
+    font-weight: bold;
+    border: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.right-column button img {
+    width: 20px;
+    margin-left: 10px;
+}
+
+
+/* diseño responsivo para pantaalas medianas*/
+@media (max-width: 1024px) {
+
+    .left-column,
+    .right-column {
+        width: 100%;
+        float: none;
+        height: auto;
+        padding: 30px;
+    }
+
+    .hero-section {
+        height: auto;
+    }
+
+    .sidebar {
+        width: 60px;
+        padding: 15px;
+    }
+
+    .main-content {
+        margin-left: 60px;
+        padding: 30px 40px;
+    }
+
+    .cta-buttons button {
+        margin: 10px 0;
+        width: auto;
+    }
+}
+
+/* Diseño responsivo para Móviles */
+@media (max-width: 767px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .home-icon img,
+    .social-icons img {
+        width: 24px;
+        height: 24px;
+        margin: 10px;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .navbar a {
+        float: none;
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .contact-info {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+        float: none;
+        padding: 20px;
+    }
+}
