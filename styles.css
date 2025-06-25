@@ -1,6 +1,4 @@
-/* === CSS con clases BEM adaptado desde el original === */
-
-/* ================= Sidebar ================= */
+/* Bloque: sidebar */
 .sidebar {
   position: fixed;
   top: 0;
@@ -15,21 +13,25 @@
   z-index: 10;
 }
 
+/* Elemento: icono dentro del sidebar */
 .sidebar__icon {
   margin-bottom: 2rem;
 }
 
+/* Modificador: icono principal de inicio */
 .sidebar__icon--home img {
   width: 30px;
   filter: invert(1);
 }
 
+/* Elemento: contenedor de íconos sociales */
 .sidebar__social {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
+/* Elemento: cada ícono social */
 .sidebar__social-icon {
   width: 24px;
   filter: invert(1);
@@ -37,12 +39,12 @@
   transition: transform 0.2s;
 }
 
+/* Hover del ícono social */
 .sidebar__social-icon:hover {
   transform: scale(1.2);
 }
 
-
-/* ================= Navbar ================= */
+/* Bloque: navbar - barra de navegación superior */
 .navbar {
   background-color: #fff;
   padding: 1rem 2rem;
@@ -52,12 +54,14 @@
   z-index: 2;
 }
 
+/* Elemento: menú de navegación */
 .navbar__menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* Elemento: enlace del menú */
 .navbar__link {
   margin-right: 1rem;
   text-decoration: none;
@@ -66,21 +70,25 @@
   transition: color 0.3s;
 }
 
+/* Estado/modificador: enlace activo */
 .navbar__link:hover,
 .navbar__link--activo {
   color: #3498db;
 }
 
+/* Elemento: contenedor de contacto telefónico */
 .navbar__contacto {
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
+/* Elemento: ícono del teléfono */
 .navbar__icono {
   width: 20px;
 }
 
+/* Elemento: número de teléfono */
 .navbar__telefono {
   color: #2c3e50;
   text-decoration: none;
@@ -88,7 +96,8 @@
 }
 
 
-/* ================= Hero Section ================= */
+
+/* Bloque: hero - sección principal */
 .hero {
   padding: 5rem 2rem;
   background-size: cover;
@@ -103,6 +112,7 @@
   z-index: 1;
 }
 
+/* Elemento: contenedor del contenido del hero */
 .hero__contenido {
   max-width: 600px;
   background-color: rgba(255, 255, 255, 0.9);
@@ -114,24 +124,28 @@
   text-align: center;
 }
 
+/* Elemento: título principal */
 .hero__titulo {
   font-size: 3rem;
   color: #2c3e50;
   margin-bottom: 0;
 }
 
+/* Elemento: subtítulo */
 .hero__subtitulo {
   font-size: 2rem;
   color: #3498db;
   margin-top: 0;
 }
 
+/* Elemento: descripción */
 .hero__descripcion {
   font-size: 1rem;
   margin: 1rem 0;
   color: #555;
 }
 
+/* Elemento: contenedor de botones */
 .hero__acciones {
   display: flex;
   justify-content: center;
@@ -139,6 +153,7 @@
   flex-wrap: wrap;
 }
 
+/* Elemento: botón de acción */
 .hero__boton {
   padding: 0.75rem 1.5rem;
   border: none;
@@ -148,20 +163,25 @@
   transition: background 0.3s;
 }
 
+/* Modificador: botón primario */
 .hero__boton--primario {
   background-color: #3498db;
   color: #fff;
 }
 
+/* Modificador: botón secundario */
 .hero__boton--secundario {
   background-color: #bdc3c7;
   color: #2c3e50;
 }
 
+/* Hover botón primario */
 .hero__boton--primario:hover {
   background-color: #2980b9;
 }
 
+/* Hover botón secundario */
 .hero__boton--secundario:hover {
   background-color: #95a5a6;
 }
+
